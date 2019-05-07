@@ -26,14 +26,24 @@ function viewCart() {
     var text = "Your shopping cart is empty.";
     return text;
   } else
-    { for (var i = 0; i < cart.length; i++) {
-    text += cart.itemName + " at " + cart.itemPrice + ",";
+    { 
+      var newarray = [];
+      for (var i = 0; i < cart.length; i++)
+        {
+          var keys = Object.keys(cart[i])[0];
+          newarray.push(keys + " at $" + cart[i][keys])
+        }
+        if (newarray.length === 1) {
+          text += newarray + ".";
+        } else if (newarray.length === 2) {
+          text += (newarray[0] + " and " + newarray[1] + ".")
+        } else if (newarray.length > 2) {
+          var lastelement = newarray.pop()
+          var other_item = newarray.join(", ")
+          text += (other_item + ", and " + lastelement + ".")  
+        }
+      }
     }
-    return text;
-    }
-}
-
-
 
 function total() {
   // write your code here
