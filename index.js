@@ -26,7 +26,7 @@ function viewCart() {
     var text = "Your shopping cart is empty.";
     return text;
   } else
-    { 
+    {
       var newarray = [];
       for (var i = 0; i < cart.length; i++)
         {
@@ -40,7 +40,7 @@ function viewCart() {
         } else if (newarray.length > 2) {
           var lastelement = newarray.pop()
           var other_item = newarray.join(", ")
-          text += (other_item + ", and " + lastelement + ".")  
+          text += (other_item + ", and " + lastelement + ".")
         }
       }
     }
