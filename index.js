@@ -21,18 +21,15 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  var text = "In your cart, you have ";
   if (cart.length === 0) {
-    var text = "Your shopping cart is empty.";
-    return text;
-  } else
-    {
-      var newarray = [];
-      for (var i = 0; i < cart.length; i++)
-        {
+    console.log("In your cart, you have ")
+  }
+  var newarray = [];
+      for (var i = 0; i < cart.length; i++) {
           var keys = Object.keys(cart[i])[0];
           newarray.push(keys + " at $" + cart[i][keys])
         }
+        var text = "In your cart, you have ";
         if (newarray.length === 1) {
           text += newarray + ".";
         } else if (newarray.length === 2) {
@@ -43,7 +40,6 @@ function viewCart() {
           text += (other_item + ", and " + lastelement + ".")
         }
       }
-    }
 
 function total() {
   // write your code here
