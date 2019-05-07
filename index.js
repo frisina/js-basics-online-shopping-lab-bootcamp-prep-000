@@ -47,10 +47,17 @@ function viewCart() {
 
 function total() {
   // write your code here
+  var total = 0;
+  for (var itemPrice in cart)
+  {
+    total += cart[itemPrice];
+  }
+  return total;
 }
 
 function removeFromCart(item) {
   // write your code here
+  
 }
 
 function placeOrder(cardNumber) {
