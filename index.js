@@ -26,8 +26,8 @@ function viewCart() {
     var text = "Your shopping cart is empty.";
     return text;
   } else
-    { for(var i = 0; i < cart.length - 1; i++) {
-    text += item.itemName + " at " + item.itemPrice + ",";
+    { for (var i = 0; i < cart.length; i++) {
+    text += cart.itemName[i] + " at " + cart.itemPrice + ",";
     }
     return text;
     }
