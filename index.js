@@ -27,9 +27,8 @@ function viewCart() {
     return text;
   } else
     { for(var i = 0; i < cart.length - 1; i++) {
-    text += item.itemName[0] + " at " + item.itemPrice + ",";
+    text += item.itemName + " at " + item.itemPrice + ",";
     }
-    text += item.itemName + " + " + item.itemPrice + ".";
     return text;
     }
 }
