@@ -15,7 +15,7 @@ function addToCart(item) {
  var itemObject = {[item]: itemPrice};
 
  cart.push(itemObject);
- return `${itemObject.itemName} has been added to your cart.`
+ return `${item} has been added to your cart.`
 }
 
 function viewCart() {
