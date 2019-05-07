@@ -29,7 +29,6 @@ function viewCart() {
     //var oneItem = `In your cart, you have ${Object.keys(cart[0])} at $${Object.values(cart[0])}`;
     return text;
   } else if (cart.length === 2) {
-    text = text + ` ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[0].itemPrice}`;
     return text;
   }
 }
