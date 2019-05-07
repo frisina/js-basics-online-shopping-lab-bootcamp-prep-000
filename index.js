@@ -36,9 +36,9 @@ function viewCart() {
       }else {
         text = text + ` ${cart[i].itemName} at $${cart[i].itemPrice},`
       }
-
-    return text;
   }
+  return text;
+
 }
 
 
