@@ -21,13 +21,13 @@ function addToCart(item) {
 }
 
 function viewCart() {
+  var text = "In your cart, you have"
   if (cart.length === 0) {
     return "Your shopping cart is empty.";
   } else if (cart.length === 1) {
-    var firstItem = Object.keys(cart[0]);
-    var oneItem = "In your cart, you have " + firstItem;
+    text += text + ` ${cart[0].itemName} at $${cart[0].itemPrice}.`
     //var oneItem = `In your cart, you have ${Object.keys(cart[0])} at $${Object.values(cart[0])}`;
-    return oneItem;
+    return text;
   }
 }
 
