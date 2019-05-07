@@ -31,19 +31,19 @@ function viewCart() {
       cartItems.push(Object.keys(cart[i]));
       cartPrices.push(' at $' + cart[i][Object.keys(cart[i])]);
       cartEverything += ( ' ' + cartItems[i] + cartPrices[i] );
-      
+
       if ((2 < cart.length) && ((i) != (cart.length - 1))) {
         cartEverything += ',';
-        
+
         if ((1 < cart.length) && ((i + 1) === (cart.length - 1))) {
         cartEverything += (' and');
         }
-        
+
       } else if ((1 < cart.length) && ((i + 1) === (cart.length - 1))) {
         cartEverything += (' and');
-        
+
       }
-    console.log(i++);  
+    console.log(i++);
     }
   }
   console.log( cartEverything + '.');
