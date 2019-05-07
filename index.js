@@ -29,7 +29,7 @@ function viewCart() {
     { for(var i = 0; i < cart.length - 1; i++) {
     text += item.itemName[0] + " at " + item.itemPrice + ",";
     }
-    text += cart.length + " + " + cart.itemPrice + ".";
+    text += cart.length + " + " + item.itemPrice + ".";
     return text;
     }
 }
