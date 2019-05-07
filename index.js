@@ -35,7 +35,7 @@ function viewCart() {
   else if (cart.length > 2) {
     for (var i = 0; i < cart.length; i++) {
       if (i === cart.length - 1) {
-        text = text + ` ${cart[i].itemName} at $${cart[i].itemPrice},`
+        text = text + ` and ${cart[i].itemName} at $${cart[i].itemPrice}.`
       }
     }
     return text;
