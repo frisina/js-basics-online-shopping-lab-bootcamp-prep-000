@@ -27,7 +27,7 @@ function viewCart() {
   }
   var newarray = [];
       for (var i = 0; i < cart.length; i++) {
-          var keys = Object.keys(cart[i])[0];
+          var keys = Object.keys(cart[i]);
           newarray.push(keys + " at $" + cart[i][keys])
         }
         var text = "In your cart, you have ";
